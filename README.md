@@ -47,8 +47,10 @@ The graph has been modified in visibility and now shows minimum and maximum poin
 <img src="./img/Graph.jpg" width="450" height="360">
 The yellow dots represents the minimum and maximum points of the function (the function in Cyan color )
 <h3>Unit Testing</h3>
+<hr>
 Under the Polynom\OOP Assignment\Testing\myMath folder you can find two Unit Testing files in order to test MONOM class and POLYNOM class that can be found at myMath package
 <h3>External info</h3>
+<hr>
 <list>
 <li>Riemann's Integral: <a href="https://en.wikipedia.org/wiki/Riemann_integral">https://en.wikipedia.org/wiki/Riemann_integral</a></li>
 <li>Root: <a href="https://www.geeksforgeeks.org/program-for-bisection-method/"> https://www.geeksforgeeks.org/program-for-bisection-method/</a></li>
