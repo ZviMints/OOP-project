@@ -10,7 +10,7 @@ in addition you can draw the polynomial function on the graph and display Max an
 <h3>The Project Includes:</h3>
 <img src="./img/packages.jpg">
 <h3>Package myMath:</h3>
-<img src="./img/ClassesUnderMyMath.jpg">
+<img src="./img/AllClassesUnderMyMath.jpg">
 <h3>Hierarchy of myMath</h3>
 <img src="./img/Hierarchy.jpg">
 <h3>Monom class</h3>
@@ -41,7 +41,7 @@ The graph has been modified in visibility and now shows minimum and maximum poin
 <br>
 <img src="./img/Graph.jpg" width="350" height="260">
 <h4>Package Graph</h4>
-<img src="./img/ClassesUnderGraph.jpg">
+<img src="./img/AllClassesUnderGraph.jpg">
 <h3>Unit Testing</h3>
 Under the Polynom\OOP Assignment\Testing\myMath folder you can find two Unit Testing files in order to test MONOM class and POLYNOM class that can be found at myMath package
 <h3>External info</h3>
