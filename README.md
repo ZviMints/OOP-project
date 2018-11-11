@@ -45,6 +45,7 @@ The graph is an open source library which can be found at <a href="https://githu
 The graph has been modified in visibility and now shows minimum and maximum points on the function
 <br>
 <img src="./img/Graph.jpg" width="450" height="360">
+<br>
 The yellow dots represents the minimum and maximum points of the function (the function in Cyan color )
 <h3>Unit Testing</h3>
 <hr>

@@ -1,5 +1,5 @@
 /**
- * This class are used to test the program
+ * This class are used to test the Polynom,Monom and Graph Test.
  *@author Tzvi Mints and Or Abuhazira
  *@version 2
  */

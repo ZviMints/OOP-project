@@ -1,9 +1,12 @@
+/**
+ * This Class Represent Test for Graph
+ * @author Tzvi Mints And Or Abuhazira
+ */
+
 package Graph;
 import javax.swing.*;
-
 import myMath.Polynom;
 import myMath.cont_function;
-
 import java.awt.*;
 import java.net.URL;
 
