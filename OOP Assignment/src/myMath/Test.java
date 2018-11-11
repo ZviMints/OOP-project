@@ -1,7 +1,7 @@
 /**
  * This class are used to test the Polynom,Monom and Graph Test.
  *@author Tzvi Mints and Or Abuhazira
- *@version 2
+ *@version 2.0
  */
 package myMath;
 import java.util.Scanner;
