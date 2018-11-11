@@ -1,4 +1,4 @@
-<h1>Polynom</h1>
+<h1>Polynom Project</h1>
 Created during an object-oriented programming course at Ariel University 2018.
 <h3>Project site: <a href="https://zvimints.github.io/Polynom/">https://zvimints.github.io/Polynom/</a></h3>
 <h3>Welcome to my and <a href="https://github.com/orabu103">Or Abuhazira</a> Project</h3>
