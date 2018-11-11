@@ -7,7 +7,6 @@ package myMath;
 import java.util.Scanner;
 public class Test {
 	public static String var_toGraph;
-
 	public static void main(String[] args) throws Exception {
 		try {
 			int num = 0;	

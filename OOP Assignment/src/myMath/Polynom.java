@@ -218,6 +218,31 @@ public class Polynom implements Polynom_able{
 		return area*eps;
 	}
 
+	/**
+	 * approximated area bellow the x-axis and above this polynom and between the [x0,x1] in eps step size
+	 */
+	public double areaBellowXAboveF(double x0, double x1, double eps) { 	// eps size steps
+		if(x0 > x1)
+		{
+			double temp = x1;
+			x1 = x0;
+			x0 = temp;
+		}
+
+		double n = (x1 - x0) / eps;
+		double area = 0;
+		int i = 0;
+		while(i < n)
+		{
+			double sum = f(x0 + i*eps);
+			if(sum < 0) // we need only approximated area above the x-axis below this Polynom and between the [x0,x1] range.
+				area += sum;
+			i++;
+		}
+		return area*eps;
+	}
+	
+	
 	@Override
 	public Iterator<Monom> iteretor() {
 		return list.iterator();
