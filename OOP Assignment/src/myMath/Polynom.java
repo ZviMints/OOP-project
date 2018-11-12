@@ -195,6 +195,9 @@ public class Polynom implements Polynom_able{
 	}
 
 	@Override
+	/**
+	 * approximated area above the x-axis and above this polynom and between the [x0,x1] in eps step size
+	 */
 	// area ~ eps * (f(x_0) + f(x_1) + .. + f(x_n)), when n is number of rectangles.
 	// more info : https://people.math.osu.edu/broaddus.9/116101-F2017/files/ExampleRiemann.pdf
 	public double area(double x0, double x1, double eps) { 	// eps size steps
@@ -236,7 +239,7 @@ public class Polynom implements Polynom_able{
 		{
 			double sum = f(x0 + i*eps);
 			if(sum < 0) // we need only approximated area above the x-axis below this Polynom and between the [x0,x1] range.
-				area += sum;
+				area += Math.abs(sum);
 			i++;
 		}
 		return area*eps;
@@ -296,10 +299,12 @@ public class Polynom implements Polynom_able{
 	// ************************************  Graph  ************************************
 	// Open Source: https://github.com/rendon/Plane
 	
+	/**
+	 * represent Graph of this polynom
+	 */
 	public void Graph()
 	{
-		Polynom pol = (Polynom) copy();
-		Graph.Test.var = pol;
+		Graph.Test.var = this;
 		Graph.Test.run();
 	}
 }

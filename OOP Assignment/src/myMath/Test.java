@@ -10,7 +10,7 @@ public class Test {
 	public static void main(String[] args) throws Exception {
 		try {
 			int num = 0;	
-			while(num<=10)
+			while(num<=11)
 			{
 				Scanner sc = new Scanner(System.in);
 				System.out.println("---> 1: Monom Tester\n"+
@@ -110,6 +110,7 @@ public class Test {
 							+ "8: multiply(Polynom_able p1)\n"
 							+ "9: root_Polynom_1(double x0,double x1, double eps)\n"
 							+ "10: f_Polynom_1(x)\n"
+							+ "11: areaBellowXAboveF_Polynom1(double x0,double x1, double eps)\n"
 							+ "   ---> PRESS OTHER KEY TO EXIT \n");
 
 					num = sc.nextInt();
@@ -180,7 +181,20 @@ public class Test {
 						int x = sc.nextInt();
 						System.out.println("f("+x+")= "+test1_pol.f(x));
 						break;
-
+					case 11:
+						try {
+							sc = new Scanner(System.in);
+							System.out.println("Enter x0,x1,eps");
+							String s = sc.nextLine();
+							String[] values = s.split(",");
+							System.out.println(test1_pol.areaBellowXAboveF(Double.parseDouble(values[0]),Double.parseDouble(values[1]), Double.parseDouble(values[2]))+"\n");
+							break;
+							}
+							catch(Exception e)
+							{
+								System.err.println("Wrong values");
+								System.exit(1);
+							}
 					default:
 						num=12;
 						System.out.println("\n---> Program has finished");
