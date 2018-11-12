@@ -1,6 +1,7 @@
 /**
  * This Class Represent Test for Graph
  * @author Tzvi Mints And Or Abuhazira
+ * @version 2.0
  */
 
 package Graph;

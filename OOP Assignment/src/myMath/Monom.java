@@ -5,6 +5,7 @@ package myMath;
  * see: https://en.wikipedia.org/wiki/Monomial 
  * The class implements function and support simple operations as: construction, value at x, derivative, add and multiply. 
  * @author Tzvi Mints and Or Abuhtzira
+ * @version 2.0
  *
  */
 public class Monom implements function{

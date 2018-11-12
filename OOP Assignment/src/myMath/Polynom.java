@@ -8,7 +8,7 @@ import myMath.Monom;
  * 3. Derivative
  * 
  * @author Tzvi Mints and Or Abuhtzira
- * @version 2
+ * @version 2.0
  */
 public class Polynom implements Polynom_able{
 	private static final Monom_Comperator cmp = new Monom_Comperator();
