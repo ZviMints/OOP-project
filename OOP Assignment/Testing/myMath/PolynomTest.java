@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 import org.junit.jupiter.api.Test;
 
 class PolynomTest {
-	private static final double EPS = 0.001;
+	private static final double EPS = 0.01;
 	private static final DecimalFormat df = new DecimalFormat("#.0000");
 	Polynom pol; // Init Polynom
 	String[] good = {"-2x+2","2x^1+2x+1","2*x^1-2*x+5","X^3-x","x","x^3+2x+6+12*x^100-x^3+x^1+x^0-2","x^0+3x+2","-x^0-3x+2x","-x^1+x^12+8*x^3+7",""};
@@ -106,7 +106,7 @@ class PolynomTest {
 	@Test
 	void testRoot() {
 		Polynom p1 = new Polynom("2x^3+2x^2+2-1");
-		assertEquals(-1.2977,Double.parseDouble(df.format(p1.root(-3, 2, EPS))));
+		assertEquals(-1.291,Double.parseDouble(df.format(p1.root(-3, 2, EPS))));
 	}
 	
 	@Test
@@ -125,9 +125,13 @@ class PolynomTest {
 	@Test
 	void testArea() {
 		Polynom p1 = new Polynom("2x^3+2x^2+2-1");
-		assertEquals(16.6575,Double.parseDouble(df.format(p1.area(-3, 2, EPS))));
+		assertEquals(16.5452,Double.parseDouble(df.format(p1.area(-3, 2, EPS))));
 	}
-
+	@Test
+	void testareaBellowXAboveF() {
+		Polynom p1 = new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");
+		assertEquals(25.1837,Double.parseDouble(df.format(p1.areaBellowXAboveF(-0.941,4.831, EPS))));
+	}
 	@Test
 	public void size() {
 		pol = new Polynom();
@@ -138,4 +142,5 @@ class PolynomTest {
 		}
 		assertTrue(pol.size() == 10); // for (1,1),(2,2)...(10,10)
 	}
+	
 }

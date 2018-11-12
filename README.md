@@ -29,6 +29,8 @@ in addition you can draw the polynomial function on the graph and display Max an
 <h3>Polynom class</h3>
 <hr>
 <img src="./img/Polynom.jpg">
+<br>
+@version 2.0 includes now AreaBellowX, details above.
 <h3>Constructors:</h3>
 <img src="./img/Polynom_Constructors.jpg">
 <h3>A valid init for Polynom:</h3>
